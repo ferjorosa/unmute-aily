@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import ConsentModal from "./ConsentModal";
 
 export const metadata: Metadata = {
-  title: "Unmute by Kyutai",
-  description: "Make LLMs listen and speak.",
+  title: "Super Agent Pro by Aily Labs",
+  description: "Real-time AI conversation for business decision support.",
 };
 
 const satoshi = localFont({

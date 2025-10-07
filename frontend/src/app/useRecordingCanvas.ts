@@ -112,7 +112,7 @@ export function useRecordingCanvas({
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.fillText("Unmute.sh", size * 0.7, size * 0.1);
+    ctx.fillText("Super Agent Pro", size * 0.7, size * 0.1);
 
     // Draw Kyutai logo underneath the text
     if (logoLoaded && logoImageRef.current) {
