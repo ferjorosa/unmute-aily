@@ -88,22 +88,22 @@ const UnmuteConfigurator = ({
       // ========== VOICE OPTIONS - UNCOMMENT ONE ==========
       
       // 🎯 FEMALE VOICE (Currently Active) - Sanofi Pharma Assistant
-      setConfig({
-        ...config,
-        voice: "unmute-prod-website/ex04_narration_longform_00001.wav",
-        voiceName: "Female",
-        instructions: { type: "sanofi_pharma", language: "en" },
-        isCustomInstructions: false,
-      });
-      
-      // 📰 MALE VOICE - Václav from Kyutai - Sanofi Pharma Assistant
       // setConfig({
       //   ...config,
-      //   voice: "unmute-prod-website/developer-1.mp3",
-      //   voiceName: "Male",
+      //   voice: "unmute-prod-website/ex04_narration_longform_00001.wav",
+      //   voiceName: "Female",
       //   instructions: { type: "sanofi_pharma", language: "en" },
       //   isCustomInstructions: false,
       // });
+      
+      // 📰 MALE VOICE - Václav from Kyutai - Sanofi Pharma Assistant
+      setConfig({
+        ...config,
+        voice: "unmute-prod-website/developer-1.mp3",
+        voiceName: "Male",
+        instructions: { type: "sanofi_pharma", language: "en" },
+        isCustomInstructions: false,
+      });
     }
   }, [backendServerUrl, config, setConfig, voices]);
 
