@@ -3,7 +3,7 @@ import { AudioProcessor } from "./useAudioProcessor";
 import { useAudioVisualizerCircle } from "./useAudioVisualizerCircle";
 import { ChatMessage } from "./chatHistory";
 import { getCSSVariable } from "./cssUtil";
-import kyutaiLogo from "../assets/kyutai-logo-cropped.svg";
+import ailyLogo from "../assets/aily-logo.svg";
 
 const getFilename = () => {
   const now = new Date();
@@ -37,7 +37,7 @@ export function useRecordingCanvas({
 
   useEffect(() => {
     const img = new window.Image();
-    img.src = kyutaiLogo.src;
+    img.src = ailyLogo.src;
     img.onload = () => setLogoLoaded(true);
     logoImageRef.current = img;
   }, []);
@@ -112,9 +112,9 @@ export function useRecordingCanvas({
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.fillText("Unmute.sh", size * 0.7, size * 0.1);
+    ctx.fillText("Super Agent Pro", size * 0.7, size * 0.1);
 
-    // Draw Kyutai logo underneath the text
+    // Draw Aily logo underneath the text
     if (logoLoaded && logoImageRef.current) {
       // Position: center under the text, scale to fit nicely
       const logoWidth = size * 0.25;
